@@ -102,3 +102,33 @@ select option {
     @apply w-[calc(100vw-2rem)] h-[calc(100vw-2rem)] max-w-[calc(100vw-2rem)];
   }
 }
+/* Override WalletMultiButton styles */
+.wallet-adapter-button {
+  @apply glass-card px-4 py-2 rounded-lg text-[#14F195] hover:border-[#14F195]/40 transition-colors flex items-center justify-center gap-2;
+  background: rgba(10, 15, 13, 0.8);
+  border: 1px solid rgba(20, 241, 149, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(20, 241, 149, 0.1),
+    inset 0 0 32px 0 rgba(20, 241, 149, 0.02);
+}
+
+.wallet-adapter-button:hover {
+  background: rgba(10, 15, 13, 0.9);
+  border-color: rgba(20, 241, 149, 0.4);
+  transform: scale(1.02);
+}
+
+.wallet-adapter-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(20, 241, 149, 0.6);
+}
+
+.wallet-adapter-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.wallet-adapter-button-text {
+  font-size: 1rem;
+  font-weight: 500;
+}

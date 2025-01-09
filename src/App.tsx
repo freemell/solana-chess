@@ -11,11 +11,7 @@ export function App() {
       <div className="relative flex-1">
         <Header />
         <main className="max-w-7xl mx-auto py-8 px-4">
-          {/* Wallet Connection Component */}
-          <div className="mb-8">
-            <WalletConnect />
-          </div>
-          {/* Chess Game Component */}
+          <WalletConnect />
           <ChessGame />
         </main>
       </div>
